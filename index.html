@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ева Врадий</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .splash-screen {
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .concept-about {
+            padding: 100px 20px;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 500px;
+        }
+
+        .swiper-slide img, .swiper-slide video {
+            width: auto;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-buttons .btn {
+            background-color: #000;
+            color: #fff;
+            border-radius: 8px;
+            border: 1px solid #fff;
+            margin: 0 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            background-color: #000;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .concept-about .row > div {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Верхнее меню -->
+    <header class="d-flex justify-content-center">
+        <a href="#exhibition">Пространство выставки</a>
+        <a href="#concept">Концепт \ О художнике</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#video">Видео</a>
+        <a href="#merch">Мерч</a>
+        <a href="#contacts">Контакты</a>
+    </header>
+
+    <!-- Заставочный экран -->
+    <section class="splash-screen">
+        <img src="img/logo eva.svg" alt="Ева Врадий" style="width: 300px;">
+    </section>
+
+    <!-- Концепт + О художнике -->
+    <section id="concept" class="concept-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>КОНЦЕПТ</h2>
+                    <p>
+                        Проект называется "Таблетка". Таблетка — это вымышленный персонаж и автобиографичный одновременно. Её голова имеет форму огромной белой овальной капсулы. Посередине расположен один крупный, объемный, миндалевидный глаз и мимическая бровь. У неё есть рот. Она говорит.<br><br>
+                        Таблетка, преодолевая время, общается с давно ушедшими персонажами — Энди Уорхолом, Жан-Мишелем Баскией, Фридой Кало. Таблетка — мемная. Она тусуется с современными художниками, задаёт вопросы полицейским в городе, едет в метро с инопланетянами. Таблетка вовлечена в диалог. Она — как граффити на заборе, стрит арт. Она говорит с любым встречным. Её вопросы всегда актуальные.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>О ХУДОЖНИКЕ</h2>
+                    <p>
+                        Тема творчества Евы Врадий — боль. Она пережила падение с высоты и получила тяжёлую травму позвоночника. Более четырёх месяцев Ева провела прикованной к постели, в состоянии неопределённости: врачи не могли сказать, сможет ли она снова ходить. Её существование было пронизано физической болью и психологической нестабильностью — обезболивающие, одиночество, разговоры с самой собой.<br><br>
+                        Это внутреннее напряжение, постоянный диалог с болью, постепенно перешло в художественную форму. В процессе восстановления родился образ — персонаж, аватар, альтер эго художника. Таблетка — вымышленное существо, одновременно комическое и мистическое, утешающая и пугающая. Таблетка стала не только метафорой обезболивания, но и медиатором между телом, сознанием и окружающим миром.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ТАБЛЕТКА -->
+    <section id="exhibition" class="container mb-5">
+        <h2 class="text-center mb-4">Пространство выставки</h2>
+        <div class="swiper exhibition-swiper">
+            <div class="swiper-wrapper">
+                <!-- изображения exhibition1-exhibition6 -->
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container mb-5">
+        <h2 class="text-center mb-4">Галерея</h2>
+        <div class="swiper gallery-swiper">
+            <div class="swiper-wrapper">
+                <!-- изображения frames-gallery-web-1 до frames-gallery-web-5 -->
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Скульптура</h2>
+        <div class="swiper sculptur-swiper">
+            <div class="swiper-wrapper">
+                <!-- изображения sculptur-(1) до sculptur-(4) -->
+            </div>
+        </div>
+    </section>
+
+    <section id="merch" class="container mb-5">
+        <h2 class="text-center mb-4">Мерч</h2>
+        <div class="swiper merch-swiper">
+            <div class="swiper-wrapper">
+                <!-- изображения merchandising-(1) до merchandising-(6) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Видео -->
+    <section id="video" class="container mb-5">
+        <h2 class="text-center mb-4">Видео</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <video controls src="video/video-(1).mp4" style="width: 100%;"></video>
+            </div>
+            <div class="col-md-6">
+                <video controls src="video/video-(2).mp4" style="width: 100%;"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <footer id="contacts">
+        <div class="footer-buttons d-flex justify-content-center">
+            <a href="#" class="btn">Email</a>
+            <a href="#" class="btn">VK</a>
+            <a href="#" class="btn">Instagram</a>
+            <a href="#" class="btn">Telegram</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const exhibitionSwiper = new Swiper('.exhibition-swiper', { slidesPerView: 1.5, loop: true, autoplay: { delay: 2500 } });
+        const gallerySwiper = new Swiper('.gallery-swiper', { slidesPerView: 1.5, loop: true, autoplay: { delay: 2500 } });
+        const merchSwiper = new Swiper('.merch-swiper', { slidesPerView: 1.5, loop: true, autoplay: { delay: 2500 } });
+        const sculpturSwiper = new Swiper('.sculptur-swiper', { slidesPerView: 1.5, loop: true, autoplay: { delay: 2500 } });
+    </script>
+</body>
+</html>
